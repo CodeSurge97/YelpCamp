@@ -156,7 +156,7 @@ app.use((err, req, res, next) => {
     res.status(statusCode).render('error', {err});
 })
 
-const port = process.env.PORT || 80;
+const port = process.env.PORT || 443;
 app.listen(port, () => {
     console.log(`Serving on port ${port}`)
 })
